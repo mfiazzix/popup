@@ -1,0 +1,80 @@
+    <html ng-app="fetch">
+    <head>
+    <title>AngularJS GET request with PHP</title>
+      <link rel="stylesheet" href="bootstrap.min.css">
+      <script src="jquery.min.js"></script>
+
+            <script type="text/javascript" src="jquery.fancybox.js?v=2.1.5"></script>
+	        <link rel="stylesheet" type="text/css" href="jquery.fancybox.css?v=2.1.5" media="screen" />
+               <script type="text/javascript">
+		$(document).ready(function() {
+			//getAllUsers();
+			$('.fancybox').fancybox();
+		});
+	</script>
+           
+    </head>
+
+    <body>
+
+          <a class="fancybox"  href="#example-popup" >Add User</a> 
+         
+    </body>
+
+
+
+    </html>
+    
+    
+
+
+	<div id="example-popup" style="display: none;">
+		     <div class="popup-content">
+            	<h2 class="popup-title">Add User</h2>
+                
+                <div>
+                         <form ng-controller="dbCtrl">
+                         <span class="spanfield">First Name</span><br />
+                            <div class="input">
+                           
+                                    <input class="span4 form-control" placeholder="minutes" type="text" ng-model="first_name" >
+                            </div>
+                    		<br />
+                            <span class="spanfield">Last Name</span><br />
+                            <div class="input">
+                           
+                                    <input class="span4 form-control" placeholder="Name" ng-model="last_name" type="text"  >
+                            </div>
+                    		<br />
+                            
+                        
+                            
+                             <span class="spanfield">Email</span><br />
+                            <div class="input">
+                             <input class="span4 form-control" placeholder="Name" type="text" ng-model="email" >
+                            </div>
+                    		<br />
+                            
+                               <span class="spanfield">Password</span><br />
+                            <div class="input">
+                             <input class="span4 form-control" placeholder="Name" type="text" ng-model="password" >
+                            </div>
+                    		<br />
+                            
+                            
+
+                            <div class="input">
+                             <input type="button" value="Submit" id="sub-102" ng-click="addUser()"  />
+                           <!--      <a id="sub-102" class="btn btn-primary submit" rel="102" href="">  Submit  </a>-->
+                            </div>
+                    		
+                            
+                            
+
+           
+            </form>
+            </div>
+        </div>
+
+	</div>   
+    
